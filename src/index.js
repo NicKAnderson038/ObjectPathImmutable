@@ -7,13 +7,17 @@ import immutable from "object-path-immutable";
 const todos = (state = [], action) => {
   switch (action.type) {
     case "ADD_TODO":
-      console.log("adding");
+      console.log("adding", state, action);
       // return [...state, { id: action.id, text: action.text, completed: false }];
-      return immutable.set(state, [], {
-        user: action.id,
-        text: action.text,
-        completed: false
-      });
+      return immutable.push(
+        state,
+        {},
+        {
+          user: action.id,
+          text: action.text,
+          completed: false
+        }
+      );
     case "TOGGLE_TODO":
       console.log("CLICK " + action.id);
       return state.map(todo =>
