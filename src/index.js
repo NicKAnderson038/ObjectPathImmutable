@@ -8,7 +8,14 @@ const todos = (state = [], action) => {
   switch (action.type) {
     case "ADD_TODO":
       console.log("adding", state, action);
-      // return [...state, { id: action.id, text: action.text, completed: false }];
+      /* 
+        return [
+        ...state, 
+          { id: action.id, 
+            text: action.text, 
+            completed: false }
+          ];
+      */
       return immutable.push(
         state,
         {},
