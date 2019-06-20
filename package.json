@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-todo",
+  "name": "object-path-immutable",
   "version": "0.0.4",
-  "description": "1. Good TImes,  we'll need to create several things at the top of index.js. We'll need a todos reducer, taking state and action, returning state, we'll need a todoapp that will combineReducers, and a store using our todoApp and passing it into createStore. \n2. Goal is to create the reducer todos so that the input is added as a todo with text and id, when the 'add todo' is clicked.\n3. Cool, now I'd like you to add a 'TOGGLE_TODO' action and dispatch it when the item in the todo list is clicked. Style it like a boss, so it's crossed out and maybe red? \n\nGood Luck!",
+  "description": "example using object-path-immutable",
   "keywords": [],
   "main": "index.js",
   "dependencies": {
