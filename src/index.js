@@ -13,7 +13,7 @@ const todos = (state = [], action) => {
         state,
         {},
         {
-          user: action.id,
+          id: action.id,
           text: action.text,
           completed: false
         }
@@ -60,7 +60,7 @@ class TodoApp extends Component {
         <ul>
           {this.props.todos.map(todo => (
             <li
-              key={todo.id}
+              key={todo.id + "-id"}
               onClick={() => {
                 store.dispatch({
                   type: "TOGGLE_TODO",
